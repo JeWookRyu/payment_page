@@ -1,4 +1,5 @@
 {
+  "homepage": "https://jewookryu.github.io/payment_page/",
   "name": "nemo-react-app",
   "version": "1.0.0",
   "main": "src/index.js",
@@ -6,9 +7,15 @@
     "start": "webpack serve --config webpack.dev.js --open",
     "build": "webpack --config webpack.prod.js",
     "dev": "webpack serve --config webpack.dev.js --open",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
-  "keywords": ["react", "real-estate", "advertising"],
+  "keywords": [
+    "react",
+    "real-estate",
+    "advertising"
+  ],
   "author": "",
   "license": "ISC",
   "description": "네모 부동산 중개사 광고 플랫폼 - React 기반 웹 애플리케이션",
@@ -23,6 +30,7 @@
     "@babel/preset-react": "^7.22.0",
     "babel-loader": "^9.1.0",
     "css-loader": "^6.8.0",
+    "gh-pages": "^6.3.0",
     "html-webpack-plugin": "^5.5.0",
     "style-loader": "^3.3.0",
     "webpack": "^5.88.0",
